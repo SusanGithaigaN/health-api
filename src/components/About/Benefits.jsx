@@ -8,8 +8,12 @@ import {
   MDBRow,
   MDBCol
 } from 'mdb-react-ui-kit';
-import reason from './Startled.gif'
-
+import reason from './Startled.gif';
+import pineapple from './pineapple.gif';
+import slush from './slush.gif';
+import Acorn from './Acorns.gif';
+import drink from './drinking coconut.gif';
+import corn from './Acorns (1).gif'
 export default function Benefits() {
   return (
     <MDBCard>
@@ -19,26 +23,26 @@ export default function Benefits() {
         </MDBCol>
         <MDBCol md='8'>
           <MDBCardBody>
-            <MDBCardTitle>Benefits of Eating Healthy</MDBCardTitle>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
+            <MDBCardTitle id='titles'>Benefits of Eating Healthy</MDBCardTitle>
+            <MDBCardText id='text'>
+            <img src={pineapple} height='80' width='80'/>
+            Reduces the risk of chronic diseases such as heart disease, stroke, diabetes, and cancer.
             </MDBCardText>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
+            <MDBCardText id='text'>
+            <img src={Acorn} height='80' width='80'/>
+            Improves mood and cognitive function.
             </MDBCardText>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
+            <MDBCardText id='text'>
+            <img src={slush} height='80' width='80'/>
+            Helps you maintain a healthy weight.
             </MDBCardText>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
+            <MDBCardText id='text'>
+            <img src={drink} height='80' width='80'/>
+            Improves skin health.
             </MDBCardText>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              content is a little bit longer.
+            <MDBCardText id='text'>
+            <img src={corn} height='80' width='80'/>
+            Strengthens bones and muscles.
             </MDBCardText>
           </MDBCardBody>
         </MDBCol>

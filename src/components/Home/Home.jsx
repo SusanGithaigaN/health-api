@@ -24,12 +24,11 @@ export default function Home() {
           <MDBCol md='4'>
             <MDBCardBody>
               <MDBCardTitle id='title'>
-                Avocad
+                eatic
                 <img src={a} width='auto' height='80' />
               </MDBCardTitle>
-              <MDBCardText>
-                The avocado is a rather unique fruit, while most fruit <br />
-                consists primarily of carbohydrates, avocado is high in health fats
+              <MDBCardText id='text'>
+              Healthy living: It's not about perfection, it's about progress.
               </MDBCardText>
               <MDBCardText>
                 <MDBBtn id='buto'>Help prevent illness</MDBBtn>

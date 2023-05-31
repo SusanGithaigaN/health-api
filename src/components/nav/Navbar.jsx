@@ -17,6 +17,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 import logo from './logo.jpeg'
+import './Navbar.css'
 
 export default function Navbar() {
   const [showBasic, setShowBasic] = useState(false);
@@ -46,8 +47,8 @@ export default function Navbar() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#'>
-                Healthy Living
+              <MDBNavbarLink active aria-current='page' href='#' id='eatico'>
+                Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             {/* <MDBNavbarItem>

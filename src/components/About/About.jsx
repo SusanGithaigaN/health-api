@@ -14,13 +14,15 @@ import Benefits from './Benefits';
 
 export default function About() {
   return (
-    <div>
+    <div id='about'>
       <div id='header'>
       <MDBCard alignment='center' id='header-card'>
-      <MDBCardHeader>Health benefits</MDBCardHeader>
+      <MDBCardHeader id='sub'>Health benefits</MDBCardHeader>
       <MDBCardBody>
-        <MDBCardTitle>Why you should monitor what you eat</MDBCardTitle>
-        <MDBCardText>With supporting text below as a natural lead-in to additional content.</MDBCardText>
+        <MDBCardTitle id='titles'>Why you should monitor what you eat</MDBCardTitle>
+        <MDBCardText id='text'>
+        When you're aware of what you're eating, you can make more informed food choices. This can help you<br /> choose foods that are healthy for you and that you enjoy
+        </MDBCardText>
         {/* <MDBBtn href='#'>Button</MDBBtn> */}
       </MDBCardBody>
       {/* <MDBCardFooter className='text-muted'>2 days ago</MDBCardFooter> */}

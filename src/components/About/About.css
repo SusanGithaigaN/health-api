@@ -1,3 +1,16 @@
+#about{
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3em;
+}
 #header-card{
     box-shadow: none;
+}
+#sub{
+    color: green;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#titles{
+    font-size: 40px;
 }
