@@ -10,22 +10,22 @@ export default function Footer() {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://web.facebook.com/githaiga.susan.77' className='me-4 text-reset'>
             <MDBIcon fab icon="facebook-f" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://twitter.com/Su_Githaiga' className='me-4 text-reset'>
             <MDBIcon fab icon="twitter" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          {/* <a href='' className='me-4 text-reset'>
             <MDBIcon fab icon="google" />
-          </a>
-          <a href='' className='me-4 text-reset'>
+          </a> */}
+          <a href='https://instagram.com/githaiga_sn' className='me-4 text-reset'>
             <MDBIcon fab icon="instagram" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/in/susan-githaiga-2832b11aa/' className='me-4 text-reset'>
             <MDBIcon fab icon="linkedin" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://github.com/SusanGithaigaN' className='me-4 text-reset'>
             <MDBIcon fab icon="github" />
           </a>
         </div>
@@ -37,16 +37,15 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+                eatico
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+              Healthy living: It's not about perfection, it's about progress.
               </p>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Home</h6>
               <p>
                 <a href='#!' className='text-reset'>
                   Angular
@@ -97,17 +96,17 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                Kiambu, Kenya, KE
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                eatico@gmail.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" />+ 254 0700 000 000
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="print" className="me-3" />+ 254 0700 000 000
               </p>
             </MDBCol>
           </MDBRow>
@@ -115,9 +114,9 @@ export default function Footer() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+        © 2023 Copyright:
+        <a className='text-reset fw-bold' href='https://www.linkedin.com/in/susan-githaiga-2832b11aa/'>
+          Susan Githaiga
         </a>
       </div>
     </MDBFooter>

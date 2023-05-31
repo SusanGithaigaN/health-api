@@ -13,8 +13,9 @@ import './Home.css'
 import avocado from './avocado.avif'
 import a from './anavocado.jpg'
 import About from '../About/About';
+import Pagination from '../Pagination/Pagination';
 // import Nutrition from '../nutrition/Nutrition';
-import Monitor from '../nutrition/Monitor';
+// import Monitor from '../nutrition/Monitor';
 export default function Home() {
   return (
     <div id='home'>
@@ -33,10 +34,10 @@ export default function Home() {
               Healthy living: It's not about perfection, it's about progress.
               </MDBCardText>
               <MDBCardText>
-                <MDBBtn id='buto'>Help prevent illness</MDBBtn>
+                <MDBBtn id='buto' href='#about'>Boost immune system</MDBBtn>
               </MDBCardText>
               <MDBCardText>
-                <MDBBtn id='but'>Boost immune system</MDBBtn>
+                <MDBBtn id='but' href='monitor'>Track your nutrition</MDBBtn>
               </MDBCardText>
             </MDBCardBody>
           </MDBCol>
@@ -47,7 +48,8 @@ export default function Home() {
       </MDBCard>
       <div id='pages'>
       <About />
-      <Monitor />
+      {/* <Monitor /> */}
+      <Pagination />
       </div>
     </div>
   );

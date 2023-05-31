@@ -8,6 +8,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import Monitor from './components/nutrition/Monitor';
 
 const DashBoard = () => {
   return (
@@ -25,12 +26,16 @@ const router = createBrowserRouter([
     element: <DashBoard />,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "#about",
         element: <About />,
+      },
+      {
+        path: "/monitor",
+        element: <Monitor />,
       },
     ],
   },

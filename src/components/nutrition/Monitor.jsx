@@ -12,6 +12,7 @@ import {
 } from 'mdb-react-ui-kit';
 import Nutrition from './Nutrition';
 import Track from './Track';
+import Pagination from '../Pagination/Pagination';
 
 export default function Monitor() {
   return (
@@ -32,6 +33,7 @@ export default function Monitor() {
       <div id='benefits-list'>
       <Nutrition />
       <Track />
+      <Pagination />
       </div>
     </div>
   )

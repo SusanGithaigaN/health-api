@@ -6,7 +6,8 @@ import {
     MDBCardBody,
     MDBCardImage,
     MDBRow,
-    MDBCol
+    MDBCol,
+    MDBBtn
 } from 'mdb-react-ui-kit';
 
 import './About.css'
@@ -56,11 +57,11 @@ export default function Benefits() {
                 </MDBCard>
             </div>
             <div id='card2'>
-            <MDBCard id='my-card'>
+                <MDBCard id='my-card'>
                     <MDBRow className='g-0'>
                         <MDBCol md='8'>
                             <MDBCardBody>
-                            <MDBCardTitle id='titles'>More benefits</MDBCardTitle>
+                                <MDBCardTitle id='titles'>More benefits</MDBCardTitle>
                                 <MDBCardText id='text'>
                                     <img src={weights} height='80' width='80' />
                                     Helps Lose Weight
@@ -84,6 +85,11 @@ export default function Benefits() {
                         </MDBCol>
                     </MDBRow>
                 </MDBCard>
+                <div className='d-flex justify-content-center' style={{paddingBottom: '4em'}}>
+                    <MDBCardText>
+                        <MDBBtn id='but' href='/monitor'>Monitor your eating <i class="fa fa-arrow-right" aria-hidden="true"></i></MDBBtn>
+                    </MDBCardText>
+                </div>
             </div>
         </div>
     );
