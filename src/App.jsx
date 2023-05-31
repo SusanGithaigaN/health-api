@@ -39,10 +39,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    // path: "/poster/:id",
-    // element: <Poster />,
-  },
+   {
+        path: "/monitor",
+        element: <Monitor />,
+      },
 ]);
 
 function App() {
