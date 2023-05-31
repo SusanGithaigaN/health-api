@@ -47,7 +47,7 @@ export default function Navbar() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='/home' id='eatico'>
+              <MDBNavbarLink active aria-current='page' href='/' id='eatico'>
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
