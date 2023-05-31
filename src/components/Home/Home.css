@@ -1,0 +1,22 @@
+#home{
+    padding-left: 6%;
+    /* padding-right: %; */
+    padding-top: 3em;
+}
+#title{
+    font-size: 80px;
+    color: green;
+    /* font-weight: bold; */
+    letter-spacing: 4px;
+}
+#home-card{
+    box-shadow: none;
+}
+#buto{
+    background-color: rgb(141, 163, 141);
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+#but{
+    background-color: rgb(89, 121, 89);   
+}
