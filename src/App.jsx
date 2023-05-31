@@ -2,7 +2,7 @@ import './App.css'
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Navbar from './components/nav/Navbar';
-
+import Footer from './components/Footer/Footer';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,7 +14,7 @@ const DashBoard = () => {
     <div>
       <Navbar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

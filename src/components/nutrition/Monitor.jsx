@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.css'
+import './Nutrition.css'
 
 import {
   MDBCard,
@@ -10,16 +10,17 @@ import {
   MDBCardFooter,
   MDBBtn
 } from 'mdb-react-ui-kit';
-import Benefits from './Benefits';
+import Nutrition from './Nutrition';
+import Track from './Track';
 
-export default function About() {
+export default function Monitor() {
   return (
-    <div id='about'>
+    <div id='monitor'>
       <div id='header'>
       <MDBCard alignment='center' id='header-card'>
-      <MDBCardHeader id='sub'>Health benefits</MDBCardHeader>
+      <MDBCardHeader id='sub'>Monitor your eating habits</MDBCardHeader>
       <MDBCardBody>
-        <MDBCardTitle id='titles'>Benefits of eating healthy</MDBCardTitle>
+        <MDBCardTitle id='titles'>Why you should monitor what you eat</MDBCardTitle>
         <MDBCardText id='text'>
         When you're aware of what you're eating, you can make more informed food choices. This can help you<br /> choose foods that are healthy for you and that you enjoy
         </MDBCardText>
@@ -29,7 +30,8 @@ export default function About() {
     </MDBCard>
       </div>
       <div id='benefits-list'>
-      <Benefits />
+      <Nutrition />
+      <Track />
       </div>
     </div>
   )

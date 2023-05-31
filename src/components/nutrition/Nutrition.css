@@ -1,7 +1,7 @@
-#about{
+#monitor{
     padding-left: 6%;
     padding-right: 6%;
-    padding-top: 4em;
+    padding-top: 8em;
 }
 #header-card{
     box-shadow: none;
@@ -14,9 +14,9 @@
 #titles{
     font-size: 40px;
 }
-#card1{
-    padding-bottom: 4em;
+#nutrition{
+    padding-top: 3em;
 }
-#my-card{
-    box-shadow: none;
+#track{
+    padding-top: 10em;
 }

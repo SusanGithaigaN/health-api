@@ -13,6 +13,8 @@ import './Home.css'
 import avocado from './avocado.avif'
 import a from './anavocado.jpg'
 import About from '../About/About';
+// import Nutrition from '../nutrition/Nutrition';
+import Monitor from '../nutrition/Monitor';
 export default function Home() {
   return (
     <div id='home'>
@@ -45,6 +47,7 @@ export default function Home() {
       </MDBCard>
       <div id='pages'>
       <About />
+      <Monitor />
       </div>
     </div>
   );
