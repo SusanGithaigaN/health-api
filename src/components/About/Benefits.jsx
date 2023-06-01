@@ -85,9 +85,13 @@ export default function Benefits() {
                         </MDBCol>
                     </MDBRow>
                 </MDBCard>
-                <div className='d-flex justify-content-center' style={{paddingBottom: '4em'}}>
+                <div className='d-flex justify-content-center' style={{ paddingBottom: '4em' }}>
                     <MDBCardText>
-                        <MDBBtn id='but' href='/monitor'>Monitor your eating <i class="fa fa-arrow-right" aria-hidden="true"></i></MDBBtn>
+                        <MDBBtn id='but'>
+                            <Link to='/monitor'>
+                                Monitor your eating
+                            </Link>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i></MDBBtn>
                     </MDBCardText>
                 </div>
             </div>
