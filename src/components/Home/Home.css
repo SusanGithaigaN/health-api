@@ -4,7 +4,7 @@
     padding-top: 3em;
 }
 #title{
-    font-size: 80px;
+    font-size: 75px;
     color: green;
     /* font-weight: bold; */
     letter-spacing: 4px;
@@ -12,6 +12,10 @@
 /* #text{
     font-size: 25px;
 } */
+#afcado{
+    padding-left: 6em;
+    /* float: right; */
+}
 #home-card{
     box-shadow: none;
 }
@@ -22,4 +26,16 @@
 }
 #but{
     background-color: rgb(89, 121, 89);   
+}
+/* responsiveness */
+@media (max-width: 768px) {
+    #afcado{
+        padding-left: 0;
+    }
+    #title{
+        font-size: 42px;
+        color: green;
+        /* font-weight: bold; */
+        letter-spacing: 4px;
+    }
 }

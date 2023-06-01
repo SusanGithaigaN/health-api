@@ -9,7 +9,7 @@ export default function Pagination() {
           <MDBPaginationLink href='/monitor'>Previous</MDBPaginationLink>
         </MDBPaginationItem>
         <MDBPaginationItem>
-          <MDBPaginationLink href='/home'>1</MDBPaginationLink>
+          <MDBPaginationLink href='/'>1</MDBPaginationLink>
         </MDBPaginationItem>
         <MDBPaginationItem>
           <MDBPaginationLink href='/monitor'>2</MDBPaginationLink>
@@ -18,7 +18,7 @@ export default function Pagination() {
           <MDBPaginationLink href='#'>3</MDBPaginationLink>
         </MDBPaginationItem> */}
         <MDBPaginationItem>
-          <MDBPaginationLink href='/home'>Next</MDBPaginationLink>
+          <MDBPaginationLink href='/'>Next</MDBPaginationLink>
         </MDBPaginationItem>
       </MDBPagination>
     </nav>

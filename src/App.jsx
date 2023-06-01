@@ -34,13 +34,13 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "monitor",
+        path: "/monitor",
         element: <Monitor />,
       },
     ],
   },
    {
-        path: "monitor",
+        path: "/monitor",
         element: <Monitor />,
       },
 ]);

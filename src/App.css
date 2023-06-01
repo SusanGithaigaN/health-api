@@ -1,3 +1,10 @@
 #text{
     font-size: 22px;
 }
+
+/* responsiveness */
+@media (max-width: 768px) {
+    #text{
+        font-size: 18px;
+    }
+}

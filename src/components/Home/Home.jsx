@@ -41,7 +41,7 @@ export default function Home() {
               </MDBCardText>
             </MDBCardBody>
           </MDBCol>
-          <MDBCol md='8'>
+          <MDBCol md='8' id='afcado'>
             <MDBCardImage src={avocado} alt='...' fluid />
           </MDBCol>
         </MDBRow>
