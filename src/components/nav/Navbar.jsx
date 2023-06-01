@@ -15,6 +15,7 @@ import {
   MDBDropdownItem,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 import logo from './logo.jpeg'
 import './Navbar.css'
@@ -55,8 +56,10 @@ export default function Navbar() {
               <MDBNavbarLink href='#about' id='eatico'>Health Benefits</MDBNavbarLink>
             </MDBNavbarItem> */}
             <MDBNavbarItem>
-              <MDBNavbarLink href='/monitor' id='eatico'>
+            <MDBNavbarLink>
+              <Link to='/monitor' id='eatico'>
                 Nutrition
+              </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
