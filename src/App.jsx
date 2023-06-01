@@ -1,50 +1,30 @@
-import './App.css'
+import './App.css';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Navbar from './components/nav/Navbar';
 import Footer from './components/Footer/Footer';
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
 import Monitor from './components/nutrition/Monitor';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const DashBoard = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/monitor" element={<Monitor />} />
+      </Routes>
       <Footer />
     </div>
   );
 };
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <DashBoard />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "#about",
-        element: <About />,
-      },
-      {
-        path: "/monitor",
-        element: <Monitor />,
-      },
-    ],
-  },
-]);
-
 function App() {
   return (
     <div className="app">
-      <RouterProvider router={router} />
+      <Router>
+        <DashBoard />
+      </Router>
     </div>
   );
 }
