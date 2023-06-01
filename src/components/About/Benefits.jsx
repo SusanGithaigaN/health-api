@@ -89,7 +89,7 @@ export default function Benefits() {
                 <div className='d-flex justify-content-center' style={{ paddingBottom: '4em' }}>
                     <MDBCardText>
                         <MDBBtn id='but'>
-                            <Link to='/monitor'>
+                            <Link to='/monitor' id='txt'>
                                 Monitor your eating
                             </Link>
                             <i class="fa fa-arrow-right" aria-hidden="true"></i></MDBBtn>
