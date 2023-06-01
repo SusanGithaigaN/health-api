@@ -15,6 +15,7 @@ const DashBoard = () => {
     <div>
       <Navbar />
       <Outlet />
+      <Monitor />
       <Footer />
     </div>
   );
