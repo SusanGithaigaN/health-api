@@ -9,6 +9,8 @@ import {
   MDBCol,
   MDBBtn
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
+
 import './Home.css'
 import avocado from './avocado.avif'
 import a from './anavocado.jpg'
@@ -31,13 +33,17 @@ export default function Home() {
                 <img src={a} width='auto' height='80' />
               </MDBCardTitle>
               <MDBCardText id='text'>
-              Healthy living: It's not about perfection, it's about progress.
+                Healthy living: It's not about perfection, it's about progress.
               </MDBCardText>
               <MDBCardText>
                 <MDBBtn id='buto' href='#about'>Boost immune system</MDBBtn>
               </MDBCardText>
               <MDBCardText>
-                <MDBBtn id='but' href='monitor'>Track your nutrition</MDBBtn>
+                <MDBBtn id='but'>
+                  <Link to='/monitor' id='txt'>
+                    Track your nutrition
+                  </Link>
+                </MDBBtn>
               </MDBCardText>
             </MDBCardBody>
           </MDBCol>
@@ -47,9 +53,9 @@ export default function Home() {
         </MDBRow>
       </MDBCard>
       <div id='pages'>
-      <About />
-      {/* <Monitor /> */}
-      <Pagination />
+        <About />
+        {/* <Monitor /> */}
+        <Pagination />
       </div>
     </div>
   );

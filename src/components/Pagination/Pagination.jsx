@@ -1,24 +1,41 @@
 import React from 'react';
 import { MDBPagination, MDBPaginationItem, MDBPaginationLink } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 export default function Pagination() {
   return (
     <nav aria-label='Page navigation example' className='d-flex justify-content-center'>
       <MDBPagination className='mb-0'>
         <MDBPaginationItem>
-          <MDBPaginationLink href='/monitor'>Previous</MDBPaginationLink>
+          <MDBPaginationLink>
+            <Link to='/monitor'>
+              Previous
+            </Link>
+          </MDBPaginationLink>
         </MDBPaginationItem>
         <MDBPaginationItem>
-          <MDBPaginationLink href='/'>1</MDBPaginationLink>
+          <MDBPaginationLink >
+            <Link to='/'>
+              1
+            </Link>
+          </MDBPaginationLink>
         </MDBPaginationItem>
         <MDBPaginationItem>
-          <MDBPaginationLink href='/monitor'>2</MDBPaginationLink>
+          <MDBPaginationLink>
+            <Link to='/monitor'>
+              2
+            </Link>
+          </MDBPaginationLink>
         </MDBPaginationItem>
         {/* <MDBPaginationItem>
           <MDBPaginationLink href='#'>3</MDBPaginationLink>
         </MDBPaginationItem> */}
         <MDBPaginationItem>
-          <MDBPaginationLink href='/'>Next</MDBPaginationLink>
+          <MDBPaginationLink>
+            <Link to='/'>
+              Next
+            </Link>
+          </MDBPaginationLink>
         </MDBPaginationItem>
       </MDBPagination>
     </nav>

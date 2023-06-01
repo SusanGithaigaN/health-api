@@ -27,6 +27,9 @@
 #but{
     background-color: rgb(89, 121, 89);   
 }
+#txt{
+    color: white;
+}
 /* responsiveness */
 @media (max-width: 768px) {
     #afcado{
