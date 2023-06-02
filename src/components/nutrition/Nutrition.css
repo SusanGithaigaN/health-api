@@ -20,3 +20,11 @@
 #track{
     padding-top: 10em;
 }
+#nutrient-card{
+    color: white;
+    background-color: green;
+}
+#food-image{
+    width: auto;
+    height: auto;
+}

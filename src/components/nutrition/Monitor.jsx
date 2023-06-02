@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './Nutrition.css'
 
 import {
@@ -14,7 +14,10 @@ import Nutrition from './Nutrition';
 import Track from './Track';
 import Pagination from '../Pagination/Pagination';
 
+
 export default function Monitor() {
+
+
   return (
     <div id='monitor'>
       <div id='header'>
