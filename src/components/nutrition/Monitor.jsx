@@ -19,6 +19,7 @@ export default function Monitor() {
     <div id='monitor'>
       <div id='header'>
       <MDBCard alignment='center' id='header-card'>
+      <MDBCardHeader style={{color: 'red'}}>Site is currently under development</MDBCardHeader>
       <MDBCardHeader id='sub'>Monitor your eating habits</MDBCardHeader>
       <MDBCardBody>
         <MDBCardTitle id='titles'>Why you should monitor what you eat</MDBCardTitle>
