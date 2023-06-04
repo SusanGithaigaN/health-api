@@ -13,7 +13,7 @@ import {
 import Nutrition from './Nutrition';
 import Track from './Track';
 import Pagination from '../Pagination/Pagination';
-import Mexican from './Mexican';
+// import Mexican from './Mexican';
 
 
 export default function Monitor() {

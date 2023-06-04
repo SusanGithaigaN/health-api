@@ -28,3 +28,8 @@
     width: auto;
     height: auto;
 }
+#keto-card:hover{
+    transform: scale(1.05);
+    background-color: rgb(231, 238, 231);
+    box-shadow: 0 0 5px 2px #068047;
+}
