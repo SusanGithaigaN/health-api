@@ -52,9 +52,6 @@ export default function Navbar() {
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
-            {/* <MDBNavbarItem>
-              <MDBNavbarLink href='#about' id='eatico'>Health Benefits</MDBNavbarLink>
-            </MDBNavbarItem> */}
             <MDBNavbarItem>
             <MDBNavbarLink>
               <Link to='/monitor' id='eatico'>
