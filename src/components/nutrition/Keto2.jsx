@@ -6,11 +6,13 @@ import {
     MDBCardText,
     MDBRow,
     MDBCol,
-    MDBCardImage
+    MDBCardImage,
+    MDBCardHeader
 } from 'mdb-react-ui-kit';
 import './Nutrition.css'
+import Nutritionlink from '../Pagination/Nutritionlink';
 
-const Nutrition = () => {
+const Keto2 = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -37,9 +39,10 @@ const Nutrition = () => {
     }, []);
 
     return (
-        <div id='keto1'>
+        <div id='keto-body'>
         <MDBRow>
-            {data.slice(0,71).map((item) => (
+        <MDBCardHeader id='subt'>More nutrition info</MDBCardHeader>
+            {data.slice(72,141).map((item) => (
                 <MDBCol sm='2' key={item.id} style={{ marginBottom: '3em' }}>
                     <MDBCard className='h-100' id='keto-card'>
                         <MDBCardImage src={item.image} position='top' alt='...' />
@@ -49,7 +52,7 @@ const Nutrition = () => {
                             <MDBCardText>Cook Time: {item.cook_time_in_minutes} minutes</MDBCardText>
                             <MDBCardText>Difficulty: {item.difficulty}</MDBCardText>
                             <MDBCardText>Servings: {item.serving}</MDBCardText>
-                            <MDBCardTitle style={{color: 'red', fontWeight: 'bold'}}>Nutrition content:</MDBCardTitle>
+                            
                             <MDBCardText>Calories: {item.calories}</MDBCardText>
                             <MDBCardText>Fat: {item.fat_in_grams} grams</MDBCardText>
                             <MDBCardText>Carbohydrates: {item.carbohydrates_in_grams} grams</MDBCardText>
@@ -60,8 +63,9 @@ const Nutrition = () => {
                 </MDBCol>
             ))}
         </MDBRow>
+        <Nutritionlink />
         </div>
     );
 };
 
-export default Nutrition;
+export default Keto2;

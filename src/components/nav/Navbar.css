@@ -8,3 +8,8 @@
     font-weight: bold;
     font-size: 17px;
 }
+#search-results{
+    padding-top: 4em;
+    padding-left: 6%;
+    padding-right: 6%;
+}
