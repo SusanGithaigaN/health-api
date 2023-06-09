@@ -15,6 +15,8 @@ export default function Search() {
     // search query
     const [searchQuery, setSearchQuery] = useState('');
     const [searchResult, setSearchResult] = useState([]);
+    // errors
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleSearch = async (event) => {
         event.preventDefault();
@@ -31,11 +33,19 @@ export default function Search() {
         try {
             const response = await fetch(url, options);
             const data = await response.json();
-            setSearchResult(data);
-        } catch (error) {
+      
+            if (data.length === 0) {
+              setErrorMessage('No results found.');
+              setSearchResult([]); // Clear previous search results
+            } else {
+              setSearchResult(data);
+              setErrorMessage('');
+            }
+          } catch (error) {
             console.error(error);
-        }
-    };
+            setErrorMessage('An error occurred. Please try again later.');
+          }
+        };
 
     const handleInputChange = (event) => {
         setSearchQuery(event.target.value);
@@ -57,6 +67,9 @@ export default function Search() {
                     Search
                 </MDBBtn>
             </form>
+             {/* errors */}
+             {errorMessage &&<MDBCardText style={{color: 'red'}}>{errorMessage}</MDBCardText>}
+             
             {/* Display search results */}
             <div id='search-results'>
                 <MDBRow>
@@ -81,6 +94,7 @@ export default function Search() {
                         </MDBCol>
                     ))}
                 </MDBRow>
+               
             </div>
         </div>
     )
