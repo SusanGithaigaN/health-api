@@ -1,7 +1,7 @@
 #monitor, #keto-body{
     padding-left: 6%;
     padding-right: 6%;
-    padding-top: 10em;
+    padding-top: 3em;
 }
 #header-card{
     box-shadow: none;
@@ -44,4 +44,18 @@
 }
 #keto1{
     padding-top: 4em;
+}
+/* responsiveness */
+@media screen and (max-width: 1000px){
+    #monitor, #keto-body{
+        padding-top: 0%;
+    }
+}    
+/* responsiveness */
+@media screen and (max-width: 768px){
+    #keto-card{
+        /* width: 100%; */
+        
+    }
+    
 }

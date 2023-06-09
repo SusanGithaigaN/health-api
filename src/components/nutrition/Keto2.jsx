@@ -11,6 +11,7 @@ import {
 } from 'mdb-react-ui-kit';
 import './Nutrition.css'
 import Nutritionlink from '../Pagination/Nutritionlink';
+import Search from './Search';
 
 const Keto2 = () => {
     const [data, setData] = useState([]);
@@ -40,6 +41,7 @@ const Keto2 = () => {
 
     return (
         <div id='keto-body'>
+        <Search />
         <MDBRow>
         <MDBCardHeader id='subt'>More nutrition info</MDBCardHeader>
             {data.slice(72,141).map((item) => (
@@ -48,10 +50,10 @@ const Keto2 = () => {
                         <MDBCardImage src={item.image} position='top' alt='...' />
                         <MDBCardBody>
                             <MDBCardTitle>Recipe: {item.recipe}</MDBCardTitle>
-                            <MDBCardText>Prep Time: {item.prep_time_in_minutes} minutes</MDBCardText>
+                            {/* <MDBCardText>Prep Time: {item.prep_time_in_minutes} minutes</MDBCardText>
                             <MDBCardText>Cook Time: {item.cook_time_in_minutes} minutes</MDBCardText>
                             <MDBCardText>Difficulty: {item.difficulty}</MDBCardText>
-                            <MDBCardText>Servings: {item.serving}</MDBCardText>
+                            <MDBCardText>Servings: {item.serving}</MDBCardText> */}
                             
                             <MDBCardText>Calories: {item.calories}</MDBCardText>
                             <MDBCardText>Fat: {item.fat_in_grams} grams</MDBCardText>

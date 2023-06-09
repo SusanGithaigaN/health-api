@@ -21,7 +21,7 @@ import Pagination from '../Pagination/Pagination';
 export default function Home() {
   return (
     <div id='home'>
-      <MDBCard id='home-card'>
+      <MDBCard id='home-card' style={{maxWidth: '100%'}}>
         <MDBRow className='g-0'>
           {/* <MDBCol md='4'>
           <MDBCardImage src='https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp' alt='...' fluid />

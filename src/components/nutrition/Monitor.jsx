@@ -14,6 +14,7 @@ import Nutrition from './Nutrition';
 import Track from './Track';
 import Pagination from '../Pagination/Pagination';
 import Nutritionlink from '../Pagination/Nutritionlink';
+import Search from './Search';
 // import Mexican from './Mexican';
 
 
@@ -22,6 +23,7 @@ export default function Monitor() {
 
   return (
     <div id='monitor'>
+    <Search />
       <div id='header'>
     <Track />
       </div>

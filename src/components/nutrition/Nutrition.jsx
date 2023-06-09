@@ -45,11 +45,11 @@ const Nutrition = () => {
                         <MDBCardImage src={item.image} position='top' alt='...' />
                         <MDBCardBody>
                             <MDBCardTitle>Recipe: {item.recipe}</MDBCardTitle>
-                            <MDBCardText>Prep Time: {item.prep_time_in_minutes} minutes</MDBCardText>
+                            {/* <MDBCardText>Prep Time: {item.prep_time_in_minutes} minutes</MDBCardText>
                             <MDBCardText>Cook Time: {item.cook_time_in_minutes} minutes</MDBCardText>
                             <MDBCardText>Difficulty: {item.difficulty}</MDBCardText>
                             <MDBCardText>Servings: {item.serving}</MDBCardText>
-                            <MDBCardTitle style={{color: 'red', fontWeight: 'bold'}}>Nutrition content:</MDBCardTitle>
+                            <MDBCardTitle style={{color: 'red', fontWeight: 'bold'}}>Nutrition content:</MDBCardTitle> */}
                             <MDBCardText>Calories: {item.calories}</MDBCardText>
                             <MDBCardText>Fat: {item.fat_in_grams} grams</MDBCardText>
                             <MDBCardText>Carbohydrates: {item.carbohydrates_in_grams} grams</MDBCardText>
